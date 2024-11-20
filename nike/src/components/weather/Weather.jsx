@@ -8,6 +8,8 @@ import rainLogo from "../../assets/weather/rain.png";
 import snowLogo from "../../assets/weather/snow.png";
 import windLogo from "../../assets/weather/wind.png";
 
+import axios from  'axios'
+
 const Weather = () => {
   const apiKey = import.meta.env.VITE_API_KEY;
   const [weatherData, setWeatherData] = useState(null);
@@ -35,11 +37,11 @@ const Weather = () => {
 
     try {
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&units=metric&appid=${apiKey}`;
-      const response = await fetch(url);
-      if (!response.ok) throw new Error("City not found");
-
-      const data = await response.json();
-
+      
+      
+     const response = await axios.get(url);
+        const data = response.data
+        
       const icon = allIcons[data.weather[0].icon] || clearLogo;
 
       setWeatherData({

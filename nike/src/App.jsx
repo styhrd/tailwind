@@ -1,14 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-
+import Weather from "./components/weather/Weather"
+import Calculator from './components/calc/Calculator'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <p className='text-white-400 px-5 py-2 bg-blue-400'>Hello World</p>
+      <div className="flex space-x-5 items-center justify-center  p-10">
+
+        <div className=" bg-blue-900 rounded-2xl p-4">
+          <Weather />
+        </div>
+        
+        <Calculator/>
+      </div>
+      
     </>
   )
 }

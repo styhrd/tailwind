@@ -13,8 +13,18 @@
 
 @layer components {
   .col {
-    @apply flex space-x-3 text-sm text-white  items-center
+    @apply flex space-x-3 text-sm text-white  items-center;
   }
 
+  .card {
+    @apply rounded-2xl p-4 h-[520px] w-[300px] flex items-center justify-center space-y-0 shadow-xl;
+  }
 
+  .headname {
+    @apply font-poppins text-lg text-center text-white;
+  }
+
+  .inp {
+    @apply text-sm h-[40px] rounded-full pl-5 bg-[#ebfffc] text-[#62262] outline-none;
+  }
 }

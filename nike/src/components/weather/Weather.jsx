@@ -60,17 +60,17 @@ const Weather = () => {
   };
 
   useEffect(() => {
-    search("London"); // Default city
+    search("Manila"); // Default city
   }, []);
 
   return (
     <div className="flex items-center justify-center flex-col p-6">
-      {/* Search Input */}
+      
       <div className="flex items-center space-x-2">
         <input
           type="text"
           placeholder="Search"
-          className="text-sm h-[40px] rounded-full pl-5 bg-[#ebfffc] text-[#62262] outline-none"
+          className="inp"
           value={searchQuery}
           onChange={(e) => setSearchQuery(e.target.value)}
         />

@@ -7,7 +7,10 @@ function App() {
 
   return (
     <>
-      <div className="flex space-x-5 items-center justify-center  p-10 h-[100vh]">
+      <div className="flex flex-col justify-center overflow-y-auto space-y-5 items-center  p-10 min-h-[100vh] md:space-x-4 md:space-y-0 md:flex-row">
+ 
+        
+
 
         <div className=" bg-blue-900 card">
           <Weather />
@@ -17,7 +20,7 @@ function App() {
           <TodoList/>
         </div>
         
-        <div>
+        <div className="card bg-amber-200">
           <Calculator/>
         </div>
         

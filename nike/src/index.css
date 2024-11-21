@@ -17,7 +17,7 @@
   }
 
   .card {
-    @apply rounded-2xl p-4 h-[520px] w-[300px] flex items-center justify-center space-y-0 shadow-xl;
+    @apply rounded-2xl p-4 min-h-[520px] w-[300px] flex items-start justify-center space-y-0 shadow-xl ;
   }
 
   .headname {
@@ -27,4 +27,12 @@
   .inp {
     @apply text-sm h-[40px] rounded-full pl-5 bg-[#ebfffc] text-[#62262] outline-none;
   }
+
+  .calcbut{
+    @apply bg-gray-200 p-3 rounded-xl w-[calc(100%/4)]
+  }
+  .calcrow{
+    @apply flex justify-between items-center w-full space-x-1
+  }
 }
+
